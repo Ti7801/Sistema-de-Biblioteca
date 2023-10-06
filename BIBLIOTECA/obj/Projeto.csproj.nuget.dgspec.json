@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiago\\OneDrive\\GITHUB_PROFISSIONAL\\AULAGABRIEL\\PROJETO2\\Projeto\\Projeto.csproj": {}
+    "C:\\Users\\tiago\\OneDrive\\PROJETOS EM C#\\SISTEMA DE BIBLIOTECA\\BIBLIOTECA\\Projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiago\\OneDrive\\GITHUB_PROFISSIONAL\\AULAGABRIEL\\PROJETO2\\Projeto\\Projeto.csproj": {
+    "C:\\Users\\tiago\\OneDrive\\PROJETOS EM C#\\SISTEMA DE BIBLIOTECA\\BIBLIOTECA\\Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\OneDrive\\GITHUB_PROFISSIONAL\\AULAGABRIEL\\PROJETO2\\Projeto\\Projeto.csproj",
+        "projectUniqueName": "C:\\Users\\tiago\\OneDrive\\PROJETOS EM C#\\SISTEMA DE BIBLIOTECA\\BIBLIOTECA\\Projeto.csproj",
         "projectName": "Projeto",
-        "projectPath": "C:\\Users\\tiago\\OneDrive\\GITHUB_PROFISSIONAL\\AULAGABRIEL\\PROJETO2\\Projeto\\Projeto.csproj",
+        "projectPath": "C:\\Users\\tiago\\OneDrive\\PROJETOS EM C#\\SISTEMA DE BIBLIOTECA\\BIBLIOTECA\\Projeto.csproj",
         "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\OneDrive\\GITHUB_PROFISSIONAL\\AULAGABRIEL\\PROJETO2\\Projeto\\obj\\",
+        "outputPath": "C:\\Users\\tiago\\OneDrive\\PROJETOS EM C#\\SISTEMA DE BIBLIOTECA\\BIBLIOTECA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",

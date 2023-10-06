@@ -67,17 +67,32 @@ namespace Projeto
                    "Estado: " + estado + '\''  ;
         }
 
-        public Emprestimo CriarEmprestimo(Exemplar exemplar)
+        public Emprestimo? CriarEmprestimo(Exemplar exemplar)
         {
             DateTime today = DateTime.Now;
             double dias = tipodosocio.DuracaoDoEmprestimo.TotalDays;
-            DateTime devolucao = today.AddDays(dias);           
-       
-            Emprestimo CriacaoEmprestimo = new Emprestimo(today, devolucao, exemplar, this);
-        
-            ListaDeEmprestimo.Add(CriacaoEmprestimo);
+            DateTime devolucao = today.AddDays(dias);
+            int cont = 0;
 
-            return CriacaoEmprestimo;           
+            foreach (Multa lista in ListaMultas)
+            {
+                if (lista.SituacaodaMulta == MultaSituacao.Pendente)
+                {
+                    cont += 1;
+                }
+            }
+
+            if (cont == 0)
+            {
+                Emprestimo CriacaoEmprestimo = new Emprestimo(today, devolucao, exemplar, this);
+                ListaDeEmprestimo.Add(CriacaoEmprestimo);
+
+                return CriacaoEmprestimo;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public void RenovarEmprestimo(Emprestimo emprestimo)
