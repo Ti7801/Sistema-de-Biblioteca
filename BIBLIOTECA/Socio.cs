@@ -115,12 +115,26 @@ namespace Projeto
 
                     if (lista.DataDaDevolucao < DateTime.Now)
                     {
-                        Multa multa = new Multa(DateTime.Now, this, lista, valor_multa, MultaSituacao.Pendente);
+                        Multa multa = new Multa(DateTime.Now, this, lista, valor_multa, MultaSituacao.Pendente, exemplar);
 
                         ListaMultas.Add(multa); 
                     } 
                     
                 }
+            }
+
+        }
+
+        public void PagarMulta(Exemplar exemplar)
+        {
+            foreach (Multa multa in ListaMultas)
+            {
+                if (multa.Exemplar.Indentificador == exemplar.Indentificador)
+                {
+                    multa.SituacaodaMulta = MultaSituacao.Paga;
+                    break;
+                }
+                
             }
 
         }
