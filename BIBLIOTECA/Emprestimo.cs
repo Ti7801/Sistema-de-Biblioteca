@@ -4,7 +4,7 @@ namespace Projeto
     internal class Emprestimo
     {
         private readonly DateTime data_do_emprestimo;
-        private readonly DateTime data_da_devolucao;
+        private DateTime data_da_devolucao;
         private DateTime data_devolvido;
         private Exemplar exemplar;
         private Socio socio;
@@ -17,6 +17,7 @@ namespace Projeto
         public DateTime DataDaDevolucao
         {
             get { return data_da_devolucao; }
+            set { data_da_devolucao = value; }
         }
 
         public DateTime DataDevolvido
@@ -36,10 +37,10 @@ namespace Projeto
             get { return socio; }
         }
 
-        public Emprestimo(DateTime data_do_emprestimo, DateTime data_da_evolucao, Exemplar exemplar, Socio socio)
+        public Emprestimo(DateTime data_do_emprestimo, DateTime data_da_devolucao, Exemplar exemplar, Socio socio)
         {
             this.data_do_emprestimo = data_do_emprestimo;
-            this.data_da_devolucao = data_da_evolucao;
+            this.data_da_devolucao = data_da_devolucao;
             this.exemplar = exemplar;
             this.socio = socio;
         }

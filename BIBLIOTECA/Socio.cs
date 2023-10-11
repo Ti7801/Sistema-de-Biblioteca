@@ -95,10 +95,16 @@ namespace Projeto
             }
         }
 
-        public void RenovarEmprestimo(Emprestimo emprestimo)
+        public void RenovarEmprestimo(Exemplar exemplar)
         {
-            double dias = tipodosocio.DuracaoDoEmprestimo.TotalDays;
-            emprestimo.DataDaDevolucao.AddDays(dias);           
+           
+            foreach (Emprestimo emprestimo in ListaDeEmprestimo)
+            {
+                if (emprestimo.Exemplar.Indentificador == exemplar.Indentificador)
+                {
+                    emprestimo.DataDaDevolucao = emprestimo.DataDaDevolucao + tipodosocio.DuracaoDoEmprestimo;
+                }
+            }
         }
 
         public void EncerrarEmprestimo(Exemplar exemplar)
