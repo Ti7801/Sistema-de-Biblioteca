@@ -18,7 +18,7 @@ namespace Projeto
             set { situacao = value; }
         }
 
-        public Exemplar(int identificador, DateTime data_de_aquisicao, Situacao situacao,Livro livro)
+        public Exemplar(int identificador, DateTime data_de_aquisicao, Situacao situacao, Livro livro)
         {
             this.identificador = identificador;
             this.data_de_aquisicao = data_de_aquisicao;

@@ -10,7 +10,7 @@ namespace Projeto
         private MultaSituacao situacao_da_multa;
         private Exemplar exemplar;
 
-        public DateTime DatadaMulta
+        public DateTime DatadaMulta 
         {
             get { return data_da_multa; }
         }

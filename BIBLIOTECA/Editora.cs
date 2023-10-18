@@ -13,10 +13,10 @@ namespace Projeto
         }
 
 
-        public Editora(string nome, List<Livro> listaLivros) 
+        public Editora(string nome) 
         {
             this.nome = nome;
-            this.listaLivros = listaLivros;
+            listaLivros = new List<Livro>();
         }
 
         public override string ToString()

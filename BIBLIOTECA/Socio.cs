@@ -44,7 +44,7 @@ namespace Projeto
             set { estado = value; }
         }
 
-        public Socio(string nome, string rua, int numero, string bairro, string cidade, string estado, TipoDoSocio tipodosocio, List<Emprestimo> emprestimo, List<Multa> multas)
+        public Socio(string nome, string rua, int numero, string bairro, string cidade, string estado, TipoDoSocio tipodosocio)
         {
             this.nome = nome;
             this.rua = rua;
@@ -53,8 +53,8 @@ namespace Projeto
             this.cidade = cidade;
             this.estado = estado;
             this.tipodosocio = tipodosocio;
-            this.ListaDeEmprestimo = emprestimo;
-            this.ListaMultas = multas;
+            ListaDeEmprestimo = new List<Emprestimo>();
+            ListaMultas = new List<Multa>();
         }
 
         public override string ToString()

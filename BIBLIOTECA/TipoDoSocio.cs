@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto
 {
-    internal class TipoDoSocio
+    internal abstract class TipoDoSocio
     {
         private string descricao_do_tipo;
         private int limite_de_exemplares;
@@ -42,5 +42,17 @@ namespace Projeto
             this.limite_de_renovacoes = limite_de_renovacoes;
             this.multa_por_dia_atrasado = multa_por_dia_atrasado;
         }
+
+        public override string ToString()
+        {
+            return "Descrição do Tipo: " + descricao_do_tipo + '\'' +
+                   "Duração do Emprestimo: " + duracao_do_emprestimo + '\'' +
+                   "Limite de Exemplares: " + limite_de_exemplares + '\'' +
+                   "Limite de Renovações: " + limite_de_renovacoes + '\'' +
+                   "Multa por dia atrasado: " + multa_por_dia_atrasado + '\'' ;
+        }
+
+        public abstract int GetLimiteDeExemplares();
+
     }
 }

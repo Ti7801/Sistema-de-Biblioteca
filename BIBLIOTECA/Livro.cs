@@ -19,8 +19,14 @@ namespace Projeto
         {
             get { return ano; }
         }
+
+        public List<Exemplar> Exemplares
+        {
+            get { return exemplares; }
+            set { exemplares = value; }
+        }
         
-        public Livro(string titulo, int ano, int edicao, string ibsn, Exemplar exemplar, Editora editora)
+        public Livro(string titulo, int ano, int edicao, string ibsn, Editora editora)
         {
             this.titulo = titulo;
             this.ano = ano;
