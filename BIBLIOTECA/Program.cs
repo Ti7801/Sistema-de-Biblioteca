@@ -81,7 +81,43 @@ namespace Projeto{
 
             //Questão 5
 
+            socio2.RenovarEmprestimo(exemplar1);
 
+            // Questão 6
+
+            socio3.EncerrarEmprestimo(exemplar2);
+
+            // Questão 7
+
+            Console.WriteLine("\nQuestão 7");
+
+            TimeSpan duracaoEmprestimonOVO = new TimeSpan(0, 0, 0, 0);
+
+            TipoDoSocio tipoDoSocioNovo = new Aluno("Aluno", 5, duracaoEmprestimonOVO, 10, 2.00);
+
+            Socio socioCriado = new Socio("Felipe", "Rua Aristedes Vilar", 295, "Funcionarios I", "João Pessoa", "PB", tipoDoSocioNovo);
+
+            socioCriado.CriarEmprestimo(exemplar3);
+            socioCriado.EncerrarEmprestimo(exemplar3);
+
+            foreach (Multa leituraMulta in socioCriado.ListaMultas)
+            {
+                Console.WriteLine("\n" + leituraMulta.Socio);
+                Console.WriteLine(leituraMulta.SituacaodaMulta);
+                Console.WriteLine("");
+            }
+          
+
+            // Questão 8
+
+            
+            Console.WriteLine("\nQuestão 8");    
+       
+            Console.WriteLine("Esse sócio possui: " + socioCriado.ListaDeEmprestimo.Count() + " Emprestimo(s)");
+     
+           socioCriado.CriarEmprestimo(exemplar3);
+            
+           Console.WriteLine("Esse sócio possui: " + socioCriado.ListaDeEmprestimo.Count() + " Emprestimo(s)");
 
         }
     }

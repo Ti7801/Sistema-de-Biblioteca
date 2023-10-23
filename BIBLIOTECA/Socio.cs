@@ -9,9 +9,9 @@ namespace Projeto
         private string bairro;
         private string cidade;
         private string estado;
-        List<Emprestimo> ListaDeEmprestimo;
+        List<Emprestimo> listaDeEmprestimo;
         private TipoDoSocio tipodosocio;
-        List<Multa> ListaMultas;
+        List<Multa> listaMultas;
 
         public string Nome
         {
@@ -44,6 +44,16 @@ namespace Projeto
             set { estado = value; }
         }
 
+        public List<Multa> ListaMultas
+        {
+            get { return listaMultas; }
+        }
+
+        public List<Emprestimo> ListaDeEmprestimo
+        {
+            get { return listaDeEmprestimo;}
+        }
+
         public Socio(string nome, string rua, int numero, string bairro, string cidade, string estado, TipoDoSocio tipodosocio)
         {
             this.nome = nome;
@@ -53,8 +63,8 @@ namespace Projeto
             this.cidade = cidade;
             this.estado = estado;
             this.tipodosocio = tipodosocio;
-            ListaDeEmprestimo = new List<Emprestimo>();
-            ListaMultas = new List<Multa>();
+            listaDeEmprestimo = new List<Emprestimo>();
+            listaMultas = new List<Multa>();
         }
 
         public override string ToString()
@@ -74,7 +84,7 @@ namespace Projeto
             DateTime devolucao = today.AddDays(dias);
             int cont = 0;
 
-            foreach (Multa lista in ListaMultas)
+            foreach (Multa lista in listaMultas)
             {
                 if (lista.SituacaodaMulta == MultaSituacao.Pendente)
                 {
@@ -85,7 +95,7 @@ namespace Projeto
             if (cont == 0)
             {
                 Emprestimo CriacaoEmprestimo = new Emprestimo(today, devolucao, exemplar, this);
-                ListaDeEmprestimo.Add(CriacaoEmprestimo);
+                listaDeEmprestimo.Add(CriacaoEmprestimo);
 
                 return CriacaoEmprestimo;
             }
@@ -98,7 +108,7 @@ namespace Projeto
         public void RenovarEmprestimo(Exemplar exemplar)
         {
            
-            foreach (Emprestimo emprestimo in ListaDeEmprestimo)
+            foreach (Emprestimo emprestimo in listaDeEmprestimo)
             {
                 if (emprestimo.Exemplar.Indentificador == exemplar.Indentificador)
                 {
@@ -109,7 +119,7 @@ namespace Projeto
 
         public void EncerrarEmprestimo(Exemplar exemplar)
         {
-            foreach (Emprestimo lista in ListaDeEmprestimo)
+            foreach (Emprestimo lista in listaDeEmprestimo)
             {
                 if (lista.Exemplar.Indentificador == exemplar.Indentificador)
                 {
@@ -123,7 +133,7 @@ namespace Projeto
                     {
                         Multa multa = new Multa(DateTime.Now, this, lista, valor_multa, MultaSituacao.Pendente, exemplar);
 
-                        ListaMultas.Add(multa); 
+                        listaMultas.Add(multa); 
                     } 
                     
                 }
@@ -133,7 +143,7 @@ namespace Projeto
 
         public void PagarMulta(Exemplar exemplar)
         {
-            foreach (Multa multa in ListaMultas)
+            foreach (Multa multa in listaMultas)
             {
                 if (multa.Exemplar.Indentificador == exemplar.Indentificador)
                 {

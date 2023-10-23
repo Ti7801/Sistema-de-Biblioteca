@@ -13,3 +13,18 @@ C:\Users\tiago\OneDrive\GITHUB_PROFISSIONAL\AULAGABRIEL\PROJETO2\Projeto\obj\Deb
 C:\Users\tiago\OneDrive\GITHUB_PROFISSIONAL\AULAGABRIEL\PROJETO2\Projeto\obj\Debug\net6.0\Projeto.pdb
 C:\Users\tiago\OneDrive\GITHUB_PROFISSIONAL\AULAGABRIEL\PROJETO2\Projeto\obj\Debug\net6.0\Projeto.genruntimeconfig.cache
 C:\Users\tiago\OneDrive\GITHUB_PROFISSIONAL\AULAGABRIEL\PROJETO2\Projeto\obj\Debug\net6.0\ref\Projeto.dll
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\bin\Debug\net6.0\Projeto.exe
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\bin\Debug\net6.0\Projeto.deps.json
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\bin\Debug\net6.0\Projeto.runtimeconfig.json
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\bin\Debug\net6.0\Projeto.dll
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\bin\Debug\net6.0\Projeto.pdb
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.csproj.AssemblyReference.cache
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.AssemblyInfoInputs.cache
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.AssemblyInfo.cs
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.dll
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\refint\Projeto.dll
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.pdb
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\Projeto.genruntimeconfig.cache
+C:\Users\tiago\OneDrive\PROJETOS EM C#\SISTEMA DE BIBLIOTECA\BIBLIOTECA\obj\Debug\net6.0\ref\Projeto.dll
